@@ -153,7 +153,7 @@ server {
     location /news-guide/articles { proxy_pass http://127.0.0.1:8003/articles; }
 
     # Root landing page
-    location = / {
+    location / {
         default_type text/html;
         return 200 '<!DOCTYPE html><html><head><title>ChatKit Examples</title><style>
             body{font-family:system-ui,sans-serif;max-width:600px;margin:50px auto;padding:20px}
